@@ -1,4 +1,4 @@
-@startuml
+@startuml space
 
 class Alien
 class cañon {
@@ -44,4 +44,8 @@ Calamar --|> Alien
 Cangrejo --|> Alien 
 
 Alien *-- Puntuacion 
+
+
+
+
 @enduml 
