@@ -15,8 +15,8 @@ int main(void) {
     });
  
   auto screen = Screen::Create(
-    Dimension::Full(),       // Width
-    Dimension::Fit(document) // Height
+    Dimension::Full(),     
+    Dimension::Fit(Lienzo) 
   );
     Render();
     screen.Print();
