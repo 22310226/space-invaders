@@ -12,28 +12,15 @@ using namespace ftxui;
 
 int main(int argc, char const *argv[])
 {
-    std::cout<<"Space invaders"<<std::endl;
     fstream archivo;
 
     archivo.open("./assets/images/canon.txt");
-    Element canon = vbox();
-    while (archivo,.eof())
-    {
-        strin linea;
-        getline(archivo,linea);
-        canon.append(text())
-
-
-
-
-    }
     string canon;
     archivo >> canon;
     archivo.close();
 
     archivo.open("./assets/images/alien.txt");
     string alien;
-    while 
     archivo >> alien;
     archivo.close();
 
@@ -45,12 +32,12 @@ int main(int argc, char const *argv[])
         Element tanque = text(canon) | bold | color(Color::Green) | bgcolor(Color::Blue);
         Element lienzo = hbox({personaje , tanque });
 
-
+        
         Screen pantalla = Screen::Create(
             Dimension::Full(),
             Dimension::Fit(lienzo));
 
-
+        
 
         Render(pantalla, lienzo);
         pantalla.Print();
