@@ -10,7 +10,7 @@ class Dibujo
 {
 private:
     int posicionX, posicionY;
-    string palabra;
+    list<string> contenido;
 public:
     Dibujo(/* args */){
         this -> posicionX = 0;
@@ -24,13 +24,14 @@ public:
     Dibujo(std::string palabra, int posicionX, int posicionY){
         this -> posicionX = posicionX;
         this -> posicionY = posicionY;
-        this -> palabra = palabra;
+        this -> contenido = palabra;
     }
 
     void Dibujar(ftxui::Screen Pantalla){
         int posicionPalabraX=0;
         int posicionPalabraY=0;
-        for (auto &&letra : palabra)
+        for (auto &&letra : contenido)
+
         {
             int posicionFinalX = this->posicionX + posicionPalabraX;
             int posicionFinalY = this->posicionY + posicionPalabraY;
